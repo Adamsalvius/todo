@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -37,11 +37,11 @@ function App() {
     setTodo("")
     }
   function deleteTodo(id){
-    const updatedTodos = [... todos].filter((todo)=> todo.id !== id)
+    const updatedTodos = [...todos].filter((todo)=> todo.id !== id)
     setTodos(updatedTodos)
   }
  function toggleComplete(id) {
-   const updatedTodos = [... todos].map((todo)=> {
+   const updatedTodos = [...todos].map((todo)=> {
      if(todo.id === id){
        todo.completed = !todo.completed
      }
@@ -54,7 +54,7 @@ function App() {
 
  }
  function editTodo(id){
-   const updatedTodos = [... todos].map((todo)=> {
+   const updatedTodos = [...todos].map((todo)=> {
      if( todo.id === id) { todo.text= editingText}
      return todo
    })
