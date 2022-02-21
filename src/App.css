@@ -1,12 +1,69 @@
 .App {
   text-align: center;
+
+ 
+}
+/* .boxer:checked {
+  
+  border: 1px solid blue;
+  background-color: aqua;
+  width: 500px;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.5;
+} */
+h1{background-color: #ffffffc2;
+text-align: center;
+margin-right: 50vh;
+margin-left: 50vh;
+border-radius: 5vh;
+color: rgb(43, 24, 207);}
+body{  
+  margin-top: 5vh;
+  
+  background-image: url("https://media.istockphoto.com/photos/linen-texture-background-seamless-pattern-picture-id470156809");
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.submitter{margin-left: 0.5vh;}
 
+.buts{padding-top: 0.5vh;
+padding-bottom: 0.8vh;
+margin: 0.5vh;}
+.edita{margin-right: 0.5vh;}
+.Deletes{margin-right: 0.5vh;}
+.Editi{margin:5px;
+background-color: #f0f0f0;}
+.todoforma{background-color: #95fceb;
+  
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+
+  width: fit-content;
+  block-size: fit-content;
+  margin: 1vh auto;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.493);
+}
+.todotitle {
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  color: #1149b8;
+  font-size: large;
+  
+  
+
+}
+.completus{
+  font-size: small;
+  padding-bottom: 0.5vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +92,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media screen and (max-width: 1000px) {
+  h1{background-color: #1149b8;
+    text-align: center;
+    margin:0;
+    }
 }
