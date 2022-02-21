@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from "react"
+
 
 
 
@@ -75,10 +75,10 @@ function Functions() {
  function editTodo(id){
    const Updates = [...todos].map((todo, todotitle)=> {
     
-     if (todotitle.value === ("")|| null) {
+  /*    if (todotitle.value === ("")|| null) {
       console.log('Text-field is empty. You cannot leave is blank!');
       return;
-  }
+  } */
   if( todo.id === id) { todo.text= editingText}
      return todo
    })
